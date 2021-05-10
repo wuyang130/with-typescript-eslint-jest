@@ -2,8 +2,9 @@
 
 import { NextApiRequest, NextApiResponse } from 'next'
 
-const handler = (req: NextApiRequest, res: NextApiResponse) => {
+const handler = (req: NextApiRequest, res: NextApiResponse): any => {
   res.status(200).json({ name: 'John Doe' })
+  return {}
 }
 
 export default handler

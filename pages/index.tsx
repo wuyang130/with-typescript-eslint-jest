@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+// eslint-disable-next-line no-undef
 export const Home = (): JSX.Element => (
   <div className="container">
     <Head>
       <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link href="/favicon.ico" rel="icon" />
     </Head>
 
     <main>
@@ -26,27 +27,27 @@ export const Home = (): JSX.Element => (
       </button>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
+        <a className="card" href="https://nextjs.org/docs">
           <h3>Documentation &rarr;</h3>
           <p>Find in-depth information about Next.js features and API.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
+        <a className="card" href="https://nextjs.org/learn">
           <h3>Learn &rarr;</h3>
           <p>Learn about Next.js in an interactive course with quizzes!</p>
         </a>
 
         <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
           className="card"
+          href="https://github.com/vercel/next.js/tree/master/examples"
         >
           <h3>Examples &rarr;</h3>
           <p>Discover and deploy boilerplate example Next.js projects.</p>
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           className="card"
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
         >
           <h3>Deploy &rarr;</h3>
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
@@ -57,11 +58,11 @@ export const Home = (): JSX.Element => (
     <footer>
       <a
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
         rel="noopener noreferrer"
+        target="_blank"
       >
         Powered by{' '}
-        <Image src="/vercel.svg" alt="Vercel Logo" height={'32'} width={'64'} />
+        <Image alt="Vercel Logo" height={'32'} src="/vercel.svg" width={'64'} />
       </a>
     </footer>
 
@@ -192,7 +193,7 @@ export const Home = (): JSX.Element => (
       }
     `}</style>
 
-    <style jsx global>{`
+    <style global jsx>{`
       html,
       body {
         padding: 0;
